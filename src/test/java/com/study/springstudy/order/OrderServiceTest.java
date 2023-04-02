@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 public class OrderServiceTest {
 
-    OrderService orderService = new OrderServiceImpl();
+    OrderService orderService = new OrderServiceImpl(discountPolicy, memberRepository);
     MemberService memberService = new MemberServiceImpl();
 
     @Test
