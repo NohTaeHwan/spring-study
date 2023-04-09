@@ -7,6 +7,10 @@ import com.study.springstudy.member.MemoryMemberRepository;
 import com.study.springstudy.order.OrderService;
 import com.study.springstudy.order.OrderServiceImpl;
 
+/**
+ * AppConfig
+ * 의존관계 주입
+ */
 public class AppConfig {
 
     public MemberService memberService(){
