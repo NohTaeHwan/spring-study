@@ -2,6 +2,7 @@ package com.study.springstudy;
 
 import com.study.springstudy.discount.DiscountPolicy;
 import com.study.springstudy.discount.FixDiscountPolicy;
+import com.study.springstudy.discount.RateDiscountPolicy;
 import com.study.springstudy.member.MemberRepository;
 import com.study.springstudy.member.MemberService;
 import com.study.springstudy.member.MemberServiceImpl;
@@ -28,6 +29,6 @@ public class AppConfig {
     }
 
     public DiscountPolicy discountPolicy(){
-        return new FixDiscountPolicy();
+        return new RateDiscountPolicy();
     }
 }
